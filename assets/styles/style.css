@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  --border-thicnkness: 4px;
+}
+caption{
+  font-size: 2em;
+  color: red;
+}
+caption::after {
+  content: "#05";
+  color: darkorchid;
+}
+table {
+  width:500px;
+  border: var(--border-thicnkness) solid red;
+  font-size: 1.2rem;
+  text-align: center;
+}
+td, th {
+  border: calc(var(--border-thicnkness)*0.5) solid blue;
+}
+tr:only-child>th {
+  background-color: bisque;
+}
+td:first-child {
+  background-color: aqua;
+  width: 12.5%;
+}
+tr:nth-child(2n+1)>td:nth-child(n+2) {
+ background-color: lightgreen;
+}
+tr:nth-child(2n)>td:nth-child(n+2) {
+  background-color: lightslategray;
+}
+tr:last-of-type>td:nth-child(n) {
+  background-color: salmon;
+}
+
+
+
